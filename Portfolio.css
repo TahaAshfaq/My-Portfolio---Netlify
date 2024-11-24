@@ -1,0 +1,729 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+  margin: 0px;
+  /* font-family:"Montserrat+Subrayada"; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav ul {
+  display: none;
+}
+#dropdown {
+  display: none;
+}
+body {
+  margin-top: 50px;
+  background: linear-gradient(
+    to bottom,
+    #1B1823,
+    #100f15
+  ); 
+}
+.topbar {
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #00d1ff;
+  overflow: hidden; /* Prevent horizontal scrolling */
+  z-index: 999;
+}
+.animation {
+  gap: 10px;
+  display: flex;
+  color: #15121b;
+  flex-direction: row;
+  animation: marquee 30s linear infinite;
+  text-wrap: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#logo {
+  margin-top: -10px;
+}
+.nav {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navelements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navbtn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  transition: font-size 0.2s ease-in-out;
+}
+.navbtn img {
+  height: 20px;
+}
+.navbtn:hover {
+  font-size: 14px;
+}
+.specialnavbtn {
+  cursor: pointer;
+  margin-top: -10px;
+  text-align: right;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  transition: font-size 0.2s ease-in-out;
+}
+
+.uniquediv {
+  display: flex;
+  flex-direction: row;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: transparent; /* Blue color for the circle */
+  border: 1.5px solid #00d0ff;
+  border-radius: 50%; /* Makes it a circle */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.circlehovered {
+  width: 10px;
+  height: 10px;
+  background-color: #00d1ff; /* Blue color for the circle */
+  border: 1.5px solid #00d1ff;
+  border-radius: 50%; /* Makes it a circle */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.line {
+  margin-top: -20px;
+  width: 1px; /* Width of the line */
+  height: 70px; /* Height of the line */
+  background-color: #00d1ff; /* Blue color for the line */
+}
+.herocontent {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Align items to the top */
+}
+
+.socialmedia {
+  position: absolute;
+  left: 0;
+  height: 60vh;
+  margin-left: 15px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+}
+
+.socialmediaimgs {
+  cursor: pointer;
+  top: 0;
+  position: fixed;
+  height: 18px;
+  transition: padding 0.5s ease; /* Smooth transition for background color */
+}
+.socialmediaimgshovered {
+  padding-left: 15px;
+  cursor: pointer;
+  top: 0;
+  position: fixed;
+  height: 18px;
+  transition: padding 0.5s ease; /* Smooth transition for background color */
+}
+
+#socialmediaimg1 {
+  margin-top: 250px;
+}
+#socialmediaimg2 {
+  margin-top: 320px;
+}
+#socialmediaimg3 {
+  margin-top: 390px;
+}
+#socialmediaimg4 {
+  margin-top: 460px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center content horizontally */
+}
+.education {
+  width: 236px;
+}
+.education h1 {
+  text-align: right;
+  color: #ff004d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.education p {
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  font-size: 10px;
+}
+#p1 {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 315px;
+}
+.intro p {
+  color: white;
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.intro h1 {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Montserrat Subrayada";
+  color: #00d1ff;
+}
+#taha {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Montserrat Subrayada";
+  color: #ff004d;
+}
+.illustration {
+  margin: 0px 20px;
+}
+
+.section2outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.sec2divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 116px;
+  width: 200px;
+  background-color: #221f2b;
+  color: white;
+  border-radius: 16px;
+}
+#png {
+  height: 37.5px;
+}
+.sec2divs p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.section2outer h1 {
+  margin: 70px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #00d1ff;
+  font-family: "Montserrat Subrayada";
+}
+#top {
+  color: #ff004d;
+  font-family: "Montserrat Subrayada";
+}
+.section3outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.section3outer h1 {
+  margin: 120px 70px 70px 70px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #00d1ff;
+  font-family: "Montserrat Subrayada";
+}
+.sec3divs {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1c26;
+  border-radius: 35px;
+  width: 440px;
+}
+/* .sec3divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    width: 440px;
+
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #1F1C26,
+        #1F1C26 5%,
+        #1F1C26 60%,
+        #1F1C26 95%
+    );
+
+    border: solid 2px transparent; 
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 0%, #00D1FF, #FF004D 99%, transparent);
+
+    background: 
+        var(--main-bg) padding-box,
+        var(--gradient-border) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 30s linear infinite; 
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+} */
+
+.img {
+  opacity: 60%;
+  border-radius: 22px;
+  margin: 20px;
+  transition: opacity 0.5s ease-in; /* Smooth transition for opacity */
+}
+.img2 {
+  opacity: 100%;
+  border-radius: 22px;
+  margin: 20px;
+  transition: opacity 0.5s ease-in; /* Smooth transition for opacity */
+}
+.sec3divs h1 {
+  font-family: "Spline Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+}
+.sec3divs p {
+  font-family: "Spline Sans", sans-serif;
+  color: white;
+  opacity: 40%;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 5px 50px;
+  height: 40px;
+  text-align: center;
+}
+#problem {
+  width: 400px;
+  height: 249px;
+}
+
+.finalsection {
+  font-family: "Montserrat Subrayada";
+  margin: 100px 0px 50px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  color: #ff004d;
+}
+#contactheading {
+  font-family: "Montserrat Subrayada";
+  font-size: 40px;
+  font-weight: 400;
+}
+#contact {
+  color: #00d1ff;
+  font-family: "Montserrat Subrayada";
+  font-size: 40px;
+  font-weight: 400;
+}
+.innerdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 200px;
+}
+.innerdivleft {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: flex-end;
+  gap: 19px;
+}
+.innerdivleft button {
+  font-family: "Montserrat Subrayada";
+  color: white;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 0;
+}
+.credentialupper {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.credentials {
+  margin-bottom: 20px;
+}
+.credentials .credentialupper h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-left: 5px;
+}
+.credentials a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  opacity: 50%;
+  margin-top: 10px;
+}
+#mypic {
+  width: 400px;
+  height: 385px;
+}
+#contactheadingsmallscreens {
+  display: none;
+}
+.dropdown {
+  display: none;
+}
+.innerdivleft button {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  #problem {
+    opacity: 100%;
+  }
+  .img {
+    opacity: 100%;
+  }
+  #contactheading {
+    display: none;
+  }
+  #contactheadingsmallscreens {
+    color: #ff004d;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Montserrat Subrayada";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .finalsection {
+    flex-direction: column;
+  }
+  .credentials {
+    text-align: left;
+  }
+  .innerdiv {
+    margin-left: 100px;
+    gap: 100px;
+  }
+  .section3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows:repeat(2,1fr) ; */
+    /* gap: 50px; */
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(2, 0fr);
+    gap: 20px;
+  }
+  .herocontent {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .education h1 {
+    text-align: center;
+  }
+  .education p {
+    text-align: center;
+  }
+  .socialmedia {
+    margin-top: 50px;
+    height: 60vh;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .illustration {
+    margin: 40px 0px;
+    height: auto;
+  }
+  .illustration img {
+    height: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .circle1 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent; /* Blue color for the circle */
+    border: 1.5px solid #00d0ff;
+    border-radius: 50%; /* Makes it a circle */
+    transition: background-color 1s ease-in-out; /* Smooth transition for background color */
+  }
+
+  .circlehovered1 {
+    width: 10px;
+    height: 10px;
+    background-color: #00d1ff; /* Blue color for the circle */
+    border: 1.5px solid #00d1ff;
+    border-radius: 50%; /* Makes it a circle */
+    transition: background-color 1s ease-in-out; /* Smooth transition for background color */
+  }
+  #logo {
+    margin-top: 1px;
+  }
+  .nav {
+    align-items: flex-start;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #specialnavbtn2 {
+    text-align: right;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    transition: font-size 0.2s ease-in-out;
+  }
+  .dropdowninner {
+    margin-top: 15px;
+    text-align: right;
+  }
+  .hiddennavbtns2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out,
+      gap 1s ease-in-out;
+  }
+  .hiddennavbtns {
+    gap: 0px;
+    margin-top: 40px 0px 0px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0s ease-in-out, visibility 1s ease-in-out,
+      gap 1s ease-in-out;
+  }
+  .hiddennavbtns2 button {
+    text-align: right;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+  .hiddennavbtns button {
+    text-align: right;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+
+  .hiddennavbtns2 button ::hover {
+    border: 1px solid #00d1ff;
+  }
+  .line2 {
+    margin-top: -20px;
+    width: 1px;
+    height: 70px;
+    background-color: #00d1ff;
+    transition: all 1s ease-in-out;
+  }
+  .line2extended {
+    margin-top: -20px;
+    width: 1px;
+    height: 380px;
+    background-color: #00d1ff;
+    transition: all 1s ease-in-out;
+  }
+  /* ----------------------------- */
+  .navelements {
+    display: none;
+  }
+  .uniquediv {
+    display: none;
+  }
+
+  .section3outer h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .sec3divs {
+    border-radius: 35px;
+    width: 330px;
+  }
+
+  #problem {
+    opacity: 100%;
+    border-radius: 25px;
+    margin: 12px;
+    height: 190px;
+    width: auto;
+  }
+  .img {
+    opacity: 100%;
+    border-radius: 25px;
+    margin: 12px;
+    height: 190px;
+    width: auto;
+  }
+  .sec3divs p {
+    margin: 5px 30px;
+  }
+
+  #mypic {
+    width: auto;
+    height: 300px;
+  }
+  .innerdivright {
+    margin: 0px;
+  }
+  .innerdiv {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    margin: 0px;
+    gap: 20px;
+  }
+
+  .herocontent {
+    justify-content: center;
+  }
+  #invisible {
+    display: none;
+  }
+  .socialmedia {
+    display: none;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .sec2divs {
+    width: 150px;
+  }
+  .section2outer h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 70px 0px;
+  }
+  .illustration img {
+    height: 250px;
+  }
+}
